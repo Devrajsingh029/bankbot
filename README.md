@@ -1,71 +1,73 @@
-# bankbot
-# Banking Chatbot Java Application
+# Simple Banking Chatbot
 
-## Overview
-This is a simple Java Swing-based banking chatbot application that allows users to:
-- Login with a username and password
-- Check account balance
-- View loan types and their required documents with rates of interest (ROI)
-- View loan ROI separately
-- Explore different types of credit cards and their details
-- Block and unblock debit cards
+A Java-based GUI chatbot for simple banking interactions like checking balance, viewing loan and credit card information, and managing debit card status. Includes user login functionality.
 
 ## Features
 
-### User Login
-- Default credentials:
-  - Username: `user`
-  - Password: `password`
+- ✅ User login authentication (default: `user` / `password`)
+- ✅ Check balance
+- ✅ View loan types, required documents, and interest rates (ROI)
+- ✅ Check loan interest rates summary
+- ✅ View credit card types and details
+- ✅ Block and unblock debit cards
+- ✅ Simple, beginner-friendly GUI using Java Swing
 
-### Check Balance
-- Displays the user's current account balance.
+## Technologies Used
 
-### Loan Info
-- Displays loan types:
-  - Personal Loan
-  - Home Loan
-  - Car Loan
-  - Education Loan
-- Shows required documents and rate of interest for each.
-
-### Loan ROI
-- Shows interest rates for different types of loans.
-
-### Credit Card Info
-- Provides details of three types of credit cards:
-  - Silver Card
-  - Gold Card
-  - Platinum Card
-- Includes credit limits, annual fees, and benefits.
-
-### Block/Unblock Debit Card
-- Allows users to block and unblock their debit cards with one click.
+- Java (JDK 8 or higher)
+- Swing for GUI
 
 ## How to Run
-1. Save the code in a file named `Chatbottt.java`.
-2. Compile the program using:
+
+1. **Clone the repository**
+```bash
+git clone <repository_url>
+```
+
+2. **Navigate to the directory**
+```bash
+cd banking-chatbot
+```
+
+3. **Compile the Java file**
 ```bash
 javac Chatbottt.java
 ```
-3. Run the program:
+
+4. **Run the chatbot**
 ```bash
 java Chatbottt
 ```
-4. Use the default login credentials (user/password) to log in.
 
-## Requirements
-- Java JDK 8 or above
-- Basic knowledge of running Java programs in terminal or IDE
+## Default Login
+- **Username:** `user`
+- **Password:** `password`
 
-## Future Enhancements (Suggestions)
-- Connect to a database for real user authentication
+## Screens and Actions
+
+| Function               | Description                                                                           |
+|-----------------------|--------------------------------------------------------------------------------------- |
+| Login Screen          | Prompt for username and password.                                                      |
+| Check Balance         | Displays current balance.                                                              |
+| Loan Info             | Shows loan types, required documents, and interest rates.                              |
+| Check Loan ROI        | Displays interest rates for various loan types.                                        |
+| Credit Card Info      | Shows details of Silver, Gold, and Platinum credit cards.                              |
+| Block Debit Card      | Blocks your debit card (if not already blocked).                                       |
+| Unblock Debit Card    | Unblocks your debit card (if blocked).                                                 |
+| Exit                  | Closes the application.                                                                |
+
+## Folder Structure (Recommended for GitHub Upload)
+```
+📂 banking-chatbot/
+ ├─ 📜 Chatbottt.java
+ ├─ 📜 README.md
+```
+
+## Improvements You Can Add
+- Store user data in files or a database
 - Add transaction history feature
-- Allow users to apply for loans and credit cards
-- Add notifications and alerts
+- Add mobile number/email verification
+- Add styling with custom icons and colors
 
-## License
-This project is for educational purposes and is open-source.
 
----
-Created by: [Devraj singh]
 
